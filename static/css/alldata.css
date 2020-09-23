@@ -1,0 +1,23 @@
+table {
+    background-color: green;
+    width: 100%;
+    border-style: dotted;
+    border: 2;
+}
+
+table th tr {
+    width: 100;
+}
+
+a{
+	text-decoration: none;
+}
+
+button.home_button{
+	display: block;
+	margin-left: 50%;
+	color: cadetblue;
+	background-color: #666666;
+	padding: 20px;
+	border-radius: 7px;
+}

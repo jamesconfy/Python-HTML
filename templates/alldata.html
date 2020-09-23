@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> -->
+    <title>All Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/alldata.css') }}">
+</head>
+<body>
+    <div><h1 align="center">All Data</h1></div>
+    <div>{% for d in data %}
+        <table border="2">
+            <tr>
+                <th>
+                    <h2>{{ d[0] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[1] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[2] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[3] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[4] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[5] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[6] }}</h2>
+                </th>
+                <th>
+                    <h2>{{ d[7] }}</h2>
+                </th>
+                <th>
+                    <h2><a href="/update_profile?id={{ d[0] }}"> Edit </a></h2>
+                </th>
+                <th>
+                    <h2><a href="/delete_profile?id={{ d[0] }}"> Delete</a></h2>
+                </th>
+            </tr>
+        </table>
+    {% endfor %}
+    </div>
+    <div>
+        <button class="home_button"><a href="home"> Add Profile </a></button>
+    </div>
+</body>
+</html>
